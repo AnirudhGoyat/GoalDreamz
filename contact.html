@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>
+        MY Contact
+    </h1>
+    <p><ADdress>H.NO-7B Sector 4,Gurugram</ADdress></p>
+    <p>Email: anirudhgoet@gmail.com</p>
+    <p>Phone no: 9992762250</p>
+    <hr size="3" noshade="1" align="center" width="1500pt">
+    <h3>Create Account with GoalDreamz</h3>
+    <form autocomplete="on" method="GET" action="mailto:anirudhgoet@gmail.com" enctype="text/plain">
+        <table> 
+            <tr>
+            <td><label for="Your Name">Your Name:</label></td>
+            <td><input type="text" name="name" required=""></td>
+            </tr>
+            <tr>
+            <td><label for="Email">Your Email:</label></td>
+            <td><input type="mail" name="email" id="email" required=""></td>
+            </tr>
+            <tr>
+                <td><label for="pas">Password:</label></td>
+                <td><input type="password" name="pass" id="pas" required=""></td>
+            </tr>
+            <tr>
+            <td><label for="TYPE OF DEVICE">Choose Your Device:</label></td>
+            <td><input list="device-type" id="TYPE OF DEVICE" name="TYPE OF DEVICE" required="" /></td></tr>
+
+                <datalist id="device-type">
+                     <option value="iphone">
+                     <option value="Android">
+                     <option value="Laptop">
+                     <option value="Computers">
+                </datalist>
+            <tr>
+              <td> <label for="Sex" required="">Sex:</label></td>
+               
+                 
+                     <td><input type="radio" id="male" >
+                     <label for="male">male</label></td>
+                
+                    <td><input type="radio" id="female">
+                    <label for="female">female</label></td>
+            
+            
+              </td>
+            </tr> 
+            <tr>
+                <td><label for="age">age(0 to 75):</label></td>
+                <td><input type="range" id="age" min="8" max="75"></td>
+            </tr>
+            <tr>
+                <td><label for="datetime">Date & Time </label></td>
+                <td><input type="datetime-local" id="datetime"></td>
+            </tr>
+            <tr>
+                <td><label for="file">Choose File</label></td>
+                <td><input type="file" id="file"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">phone number: </label></td>
+                <td><input type="tel" id="phone" required="" name="phone number"></td>
+            </tr>
+            <tr>
+                <td><label for="review">Review about our site:</label></td>
+                <td><textarea name="review" id="review" cols="30" rows="10" maxlength="220"  name="review"></textarea></td>
+            </tr>
+        </table>  
+
+            <button formnovalidate>Submit</button><br>
+    </form>
+
+</body>
+</html>
